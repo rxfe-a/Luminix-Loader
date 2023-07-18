@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Luminix | Redirecting</title>
+  <link href="css/main.css" rel="stylesheet">
+  <script>
+    const username = localStorage.getItem('username');
+    const passcode = localStorage.getItem('passcode');
+
+if (username) {
+  window.location.href = './calc.html';
+}
+  </script>
+</head>
+<body>
+  <div class="circle-container">
+    <div class="circle" id="circle1"></div>
+    <div class="circle" id="circle2"></div>
+    <div class="circle" id="circle3"></div>
+    <div class="circle" id="circle4"></div>
+    <div class="circle" id="circle5"></div>
+    <div class="circle" id="circle6"></div>
+    <div class="circle" id="circle7"></div>
+    <div class="circle" id="circle8"></div>
+    <div class="circle" id="circle9"></div>
+  </div>
+
+  <script src="./js/spinFX.js"></script>
+  <script src="./js/f.js"></script>
+  
+  <div class="center">
+    <h1>Welcome To Luminix</h1>
+    <div class="register-container">
+      <h1 class="text">To use Luminix, you need a account. Why? Because this is a whitelisted project.</h1>
+      <input type="text" class="signup-input" id="username_input" placeholder="Enter in a Username">
+      <input type="text" class="signup-input" id="passcode_input" placeholder="Enter in a number code (This is your unique code to login)">
+      <button class="glowing-button" id="signup-button" onclick="register()">Sign Up</button>
+    </div>
+  </div>
+</body>
+</html>
